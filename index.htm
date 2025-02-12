@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Special</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background: url('https://i.imgur.com/Y0zEBeA.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header {
+            background: rgba(255, 0, 127, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .yes-button {
+            background-color: #008000;
+            color: white;
+        }
+        .no-button {
+            background-color: #ff0000;
+            color: white;
+        }
+    </style>
+    <script>
+        function goToYesPage() {
+            window.location.href = 'yes.html';
+        }
+        function goToNoPage() {
+            window.location.href = 'no.html';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hi Ananya Lahari! Will you be my valentine?</h1>
+        <div class="button-container">
+            <button class="yes-button" onclick="goToYesPage()">Yes</button>
+            <button class="no-button" onclick="goToNoPage()">No</button>
+        </div>
+    </header>
+</body>
+</html>
