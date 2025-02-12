@@ -9,8 +9,8 @@
             text-align: center;
             margin: 0;
             background: url('https://i.imgur.com/7tOX7gI.png') no-repeat center center fixed;
-            background-size: contain; /* Ensures the whole image fits */
-            background-color: black; /* Fallback color */
+            background-size: contain;
+            background-color: black;
             color: white;
             height: 100vh;
             display: flex;
@@ -19,21 +19,23 @@
             align-items: center;
         }
         .container {
-            background: rgba(0, 128, 0, 0.5); /* More transparency */
-            padding: 10px 15px; /* Smaller padding */
+            background: rgba(0, 128, 0, 0.4); /* Even more transparent */
+            padding: 8px 12px; /* Smaller padding */
             border-radius: 10px;
-            max-width: 70%;
+            max-width: 60%; /* Reduced width */
         }
         h1 {
-            font-size: 24px; /* Reduced font size */
+            font-size: 20px; /* Further reduced */
+            margin-bottom: 8px;
         }
         p {
-            font-size: 16px; /* Adjusted font */
+            font-size: 14px; /* Smaller font */
+            margin: 0; /* Removed extra spacing */
         }
         .back-button {
-            margin-top: 15px;
-            padding: 8px 16px;
-            font-size: 14px;
+            margin-top: 12px;
+            padding: 6px 14px;
+            font-size: 12px;
             border: none;
             border-radius: 5px;
             background-color: white;
@@ -45,10 +47,7 @@
 <body>
     <div class="container">
         <h1>YAY! You said YES! ❤️</h1>
-        <p><strong>Wofooooooo....</strong> 😍</p>
-        <p>Thank you for choosing me out of the **seven billion people** in the world. 🌍💑</p>
-        <p>We will surely have **ups and downs**, but I am really looking forward to another **great year** with you—filled with **happiness, love, and endless memories!** 💕✨</p>
-        <h2>💖 You are my forever Valentine! 💖</h2>
+        <p><strong>Wofooooooo....</strong>😍 Thank you for choosing me out of the **seven billion people** in the world.🌍💑 We will surely have **ups and downs**, but I am really looking forward to another **great year** with you—filled with **happiness, love, and endless memories!**💕✨</p>
         <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
     </div>
 </body>
