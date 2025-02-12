@@ -17,24 +17,28 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
         }
         .container {
-            background: rgba(0, 128, 0, 0.4); /* Even more transparent */
-            padding: 8px 12px; /* Smaller padding */
+            background: rgba(0, 128, 0, 0.5); /* Small square with transparency */
+            padding: 15px;
             border-radius: 10px;
-            max-width: 60%; /* Reduced width */
+            width: 250px; /* Small fixed width */
+            text-align: center;
         }
         h1 {
-            font-size: 20px; /* Further reduced */
+            font-size: 18px; /* Adjusted size */
             margin-bottom: 8px;
         }
         p {
-            font-size: 14px; /* Smaller font */
-            margin: 0; /* Removed extra spacing */
+            font-size: 12px; /* Small text */
+            margin: 0;
         }
         .back-button {
-            margin-top: 12px;
-            padding: 6px 14px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 6px 12px;
             font-size: 12px;
             border: none;
             border-radius: 5px;
@@ -45,10 +49,10 @@
     </style>
 </head>
 <body>
+    <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
     <div class="container">
         <h1>YAY! You said YES! ❤️</h1>
         <p><strong>Wofooooooo....</strong>😍 Thank you for choosing me out of the **seven billion people** in the world.🌍💑 We will surely have **ups and downs**, but I am really looking forward to another **great year** with you—filled with **happiness, love, and endless memories!**💕✨</p>
-        <button class="back-button" onclick="window.location.href='index.html'">Go Back</button>
     </div>
 </body>
 </html>
